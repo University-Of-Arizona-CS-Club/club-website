@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Proxima Nova Extra Condensed', sans-serif;
 }
 
 a {
@@ -15,12 +16,13 @@ a {
 }
 
 header {
-    background-color: #0C234B;
+    background-color: #001E4C;
     color: #fff;
+    padding: 0 10%;
 }
 
 .footer {
-    background: #0C234B;
+    background: #001E4C;
     color: #fff;
 }
 
@@ -34,6 +36,7 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu {
@@ -45,6 +48,7 @@ header {
 
 .main {
     padding: 0 10%;
+    background-color: #001E4C;
 }
 
 .main-content {
@@ -53,3 +57,15 @@ header {
     align-items: center;
     gap: 20px;
 }
+
+#logo {
+    width: 100px;
+}
+
+#logo-holder {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+}
+

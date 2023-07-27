@@ -1,0 +1,97 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set main colors and font */
+body {
+    font-family: 'Proxima Nova Extra Condensed', sans-serif;
+    color: #0C234B;
+    background-color: #FFFFFF;
+}
+
+header {
+    background-color: #0C234B;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Style the navigation menu for mobile */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Mobile version */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Show the toggle icon on mobile */
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: none; /* Hide nav links by default on mobile */
+    }
+
+    /* Show nav links when menu icon is clicked */
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Set the height of your logo image */
+    margin-right: 10px;
+}
+
+#logo {
+    width: 50px;
+}
